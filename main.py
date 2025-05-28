@@ -7,7 +7,7 @@ import numpy as np
 from skimage.color import rgb2lab, lab2rgb
 from keras.models import load_model
 
-TOKEN = 'TELEGRAM_BOT_TOKEN_УДАЛЁН_ИЗ_ИСТОРИИ'
+TOKEN = os.getenv("BOT_TOKEN")
 # Создаем экземпляр бота
 bot = telebot.TeleBot(TOKEN)
 
