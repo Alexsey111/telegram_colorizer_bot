@@ -7,7 +7,7 @@ import numpy as np
 from skimage.color import rgb2lab, lab2rgb
 from keras.models import load_model
 
-TOKEN = '6935684870:AAHQy6y88blx6n1Xk0O2dZvdpXQfrrSJlW0'
+TOKEN = os.getenv("BOT_TOKEN")
 # Создаем экземпляр бота
 bot = telebot.TeleBot(TOKEN)
 
